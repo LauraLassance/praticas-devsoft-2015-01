@@ -8,7 +8,7 @@ RSpec.configure do |config|
   config.formatter = 'documentation'
 end
 
-describe 'Exercise w1-e3' do
+describe 'Exercise W1-E3' do
 
   before(:all) do
     working_dir = File.expand_path('../', __FILE__)
