@@ -1,0 +1,7 @@
+mkdir praticas_desenvolvimento_software
+ln -s praticas_desenvolvimento_software devsoft
+mkdir praticas_desenvolvimento_software/marcos
+ln -s marcos praticas_desenvolvimento_software/marquetz
+ln -s marcos praticas_desenvolvimento_software/8041331
+mkdir praticas_desenvolvimento_software/marcos/lecture1
+touch praticas_desenvolvimento_software/marcos/lecture1/empty.txt
