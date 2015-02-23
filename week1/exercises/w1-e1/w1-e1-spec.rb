@@ -38,6 +38,19 @@ describe 'Exercise W1-E1' do
     @test_file_5 = File.join(working_dir, 'praticas_desenvolvimento_software', USER_NUSP)
     @test_file_6 = File.join working_dir, 'praticas_desenvolvimento_software', USER_NAME, 'lecture1'
     @test_file_7 = File.join working_dir, 'praticas_desenvolvimento_software', USER_NAME, 'lecture1', 'empty.txt'
+
+    [
+      @test_file_1,
+      @test_file_2,
+      @test_file_3,
+      @test_file_4,
+      @test_file_5,
+      @test_file_6,
+      @test_file_7
+    ].each do |path|
+      FileUtils.rm_rf(path)
+    end
+
   end
 
   specify 'File w1-e1-solution.sh exists' do
