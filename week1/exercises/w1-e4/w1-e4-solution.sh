@@ -1,0 +1,11 @@
+case "$1" in
+	"cd") echo "O comando 'cd [DIRECTORY]' permite ao usuário mudar seu diretório de trabalho para DIRECTORY. Isso pode ser usado para deixar mais prática a execução de vários outros comandos em um mesmo diretório. Para utilizar, basta especificar o path que do diretório antigo ao novo (caminho relativo) ou ou o path absoluto do diretório novo (caminho absoluto). 'cd /' retorna o usuário ao diretório root.";;
+	"ls") echo "O comando 'ls [FILE]' lista, no stdin, o conteúdo de um diretório [FILE]. Sem o argumento [FILE], ele lista as informações do diretório de trabalho. Possue várias opções que permitem filtrar e organizar a saída.";;
+	"pwd") echo "O comando 'pwd' imprime, no stdin, o nome completo do diretório de trabalho.";;
+	"cat") echo "O comando 'cat [FILE]' concatena os arquivos FILE ou, na sua ausência, o stdin, e imprime o resultado no stdout. Possui diversas opções que formatam a saída";;
+	"rm") echo "O comando 'run [FILE]' remove os arquivos designados em FILE";;
+	"mv") echo "O comando 'mv [SOURCE] [DEST]' ou 'mv [SOURCE] [DIRECTORY]' permite renomear um arquivo SOURCE para DEST (1ª opção) ou mover todos os arquivos SOURCE para a pasta DIRECTORY. Algumas opçoes permitem realizar backup dos arquivos ou como tratar substituir arquivos de mesmo nome.";;
+	"chmod") echo "O comando 'chmod [MODE] [FILE]' modifica as permissões do arquivo FILE, de acordo com o MODO selecionado.Esse modo pode ser uma sequencia de caracteres ou de números em base octal. Permissões diferentes podem ser concedidas ao 'user' dono do arquivo (u), a membros do grupo do arquivo (g) e àqueles que não pertencem a nenhum dos dois anteriores (o). As principais permissões são para ler (r), escrever (w) e executar o arquivo (x).";;
+	"man") echo "O comando 'man [PAGE]' normalmente recebe como argumento um programa utilidade ou função PAGE. A página de manual referente a PAGE é então mostrada, se existir, contendo informações como a função e opções de PAGE.";;
+	"time") echo "O comando 'time [COMMAND] [ARGS]' executa o comando COMMAND com seus argumentos ARGS, e então exibe informações sobre recursos utilizados por COMMAND. Quais informações são exibidas é determinado pela opção '-f FORMAT'. A ausência dessa opção causa o comando 'time' exibir informações que considera relevante.";;
+esac
