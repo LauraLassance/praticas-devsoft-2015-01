@@ -1,4 +1,3 @@
-#!bin/bash
 
 wget -O saida.txt http://www.tldp.org/LDP/intro-linux/html/intro-linux.html
 echo "Linux: "
