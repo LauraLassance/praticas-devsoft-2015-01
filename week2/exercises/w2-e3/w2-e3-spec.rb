@@ -19,12 +19,27 @@ describe 'Exercise W2-E3' do
 
   specify "Branch u_#{USER_NUSP}/b2 exists" do
     output = exec_cmd('git branch')
-    expect(output).to match(/^\s+u_#{USER_NUSP}\/b2\n/)
+    expect(output).to match(/^\*?\s+u_#{USER_NUSP}\/b2/)
   end
 
   specify "Branch u_#{USER_NUSP}/b2 was created based on 'improve_brownie_recipe' branch" do
-    output = exec_cmd('git log --all --decorate --oneline')
-    # TODO
+    output = exec_cmd('git log --decorate --oneline')
+
+    commits = output.split("\n")
+    head = commits[0]
+
+    expect(commits[2]).to match(/improve_brownie_recipe/)
+    expect(commits[1]).to match(/master/)
+
+    expect(head).to match(/Fix brownie recipe/)
+  end
+
+  specify "Conflicts were solved correctly" do
+    content = File.read("#{WORKING_DIR}/desserts/brownie.md")
+    expect(content).to_not match(/HEAD/)
+    expect(content).to_not match(/</)
+    expect(content).to_not match(/>/)
+    expect(content).to_not match(/\=/)
   end
 
 end
