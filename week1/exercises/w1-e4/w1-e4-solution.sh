@@ -2,38 +2,47 @@
 
 if [ "$1" == "cd" ]
 then
-echo "Muda de diretorio"
+
+echo "Muda o diretório em que se está"
 
 elif [ "$1" == "ls" ]
 then
-echo "Lista tudo que tem no diretorio"
+
+echo "Lista os arquivos e diretórios da pasta em que se está (ou dá que você especificou)"
 
 elif [ $1 == "pwd" ]
 then
-echo "Indica o endereco do diretorio"
+
+echo "Indica o endereco do diretorio atual"
 
 elif [ $1 == "cat" ]
 then
-echo "Abre um arquivo"
+
+echo "Concatena arquivos e os imprime na tela"
 
 elif [ $1 == "rm" ]
 then
-echo "Remove um arquivo ou diretorio"
+
+echo "Remove arquivos e/ou diretorios"
 
 elif [ $1 == "mv" ]
 then
-echo "Muda arquivos e diretorio de lugar"
+
+echo "Move (ou renomeia) arquivos e diretorio"
 
 elif [ $1 == "chmod" ]
 then
+
 echo "Muda as permissoes de usuario"
 
 elif [ $1 == "man" ]
 then
-echo "Abre o manual"
+
+echo "Abre o manual de determinado comando"
 
 elif [ $1 == "time" ]
 then
-echo "Indica o tempo de execucao do comando"
+
+echo "Indica o tempo de execucao de determinado comando"
 
 fi
