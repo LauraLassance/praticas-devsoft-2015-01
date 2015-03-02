@@ -1,0 +1,10 @@
+mkdir praticas_desenvolvimento_software
+ln -s praticas_desenvolvimento_software devsoft
+cd praticas_desenvolvimento_software
+mkdir henrique_waldemarin_ioneda
+ln -s henrique_waldemarin_ioneda kiki
+ln -s henrique_waldemarin_ioneda 7568625
+cd henrique_waldemarin_ioneda
+mkdir lecture1
+cd lecture1
+touch empty.txt
