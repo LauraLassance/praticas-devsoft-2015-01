@@ -19,12 +19,20 @@ describe 'Exercise W2-E2' do
 
   specify 'Milkshake recipe was added' do
     output = exec_cmd('git diff --name-status HEAD^1 HEAD')
-    # TODO
+    expect(output).to match(/^A\s+drinks\/milkshake\.md$/)
   end
 
-  specify 'Cappuccino recipe was removed' do
+  specify 'Milkshake recipe exists' do
+    expect(File.exists?("#{WORKING_DIR}/drinks/milkshake.md")).to be_truthy
+  end
+
+  specify 'Milkshake recipe is not empty' do
+    expect(File.read("#{WORKING_DIR}/drinks/milkshake.md").length).to be > 0
+  end
+
+  specify 'Cappuccino recipe was removed from Git' do
     output = exec_cmd('git diff --name-status HEAD^1 HEAD')
-    # TODO
+    expect(output).to match(/^D\s+drinks\/cappuccino\.md$/)
   end
 
 end
