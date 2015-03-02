@@ -1,7 +1,5 @@
 #!/bin/bash
 
-wget -O download.html $1
+wget -O teste.txt $1
 
-x=`cat download.html | grep -io $2 | wc -w`
-
-echo "$2: $x"
+echo "$2: $(cat teste.txt | grep -io $2 | wc -w)"
