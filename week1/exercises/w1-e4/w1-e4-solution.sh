@@ -1,4 +1,4 @@
-echo -n -e "\nCommand '$1': "
+echo -n -e "\nCommand $1: "
 
 case $1 in
   cd) echo "Changes the current directory to the one specified in the first argument.";;
