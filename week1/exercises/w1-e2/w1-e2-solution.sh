@@ -1,8 +1,7 @@
 wget http://www.tldp.org/LDP/intro-linux/html/intro-linux.html
-echo "Linux:"
+echo "Linux "
 grep -o Linux intro-linux.html | wc -l
-echo "linux:"
+echo "linux "
 grep -o linux intro-linux.html | wc -l
-echo "linux (case-insensitive):"
+echo "linux (case-insensitive) "
 grep -o -i linux intro-linux.html | wc -l
-rm intro-linux.html
