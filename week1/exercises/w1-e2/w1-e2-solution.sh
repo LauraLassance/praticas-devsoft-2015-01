@@ -5,3 +5,4 @@ echo "linux:"
 grep -o linux intro-linux.html | wc -l
 echo "linux (case-insensitive):"
 grep -o -i linux intro-linux.html | wc -l
+rm intro-linux.html
