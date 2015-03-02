@@ -14,4 +14,6 @@ elif [ "$1" = "chmod"]; then
   echo "Muda as permissões do arquivo"
 elif [ "$1" = "man"]; then
   echo "Mostra o manual de algum comando. Por exemplo, se digitarmos man echo ele vai mostrar um manual sobre como funciona o comando echo."
+elif [ "$1" = "time"]; then
+  echo "Mede o tempo de execução de algum programa."
 fi
