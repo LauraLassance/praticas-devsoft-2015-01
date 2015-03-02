@@ -1,0 +1,8 @@
+#!/bin/bash
+mkdir praticas_desenvolvimento_software
+ln -s praticas_desenvolvimento_software devsoft
+mkdir praticas_desenvolvimento_software/cezar
+ln -s cezar praticas_desenvolvimento_software/czar
+ln -s cezar praticas_desenvolvimento_software/8586774
+mkdir praticas_desenvolvimento_software/cezar/lecture1
+touch praticas_desenvolvimento_software/cezar/lecture1/empty.txt
