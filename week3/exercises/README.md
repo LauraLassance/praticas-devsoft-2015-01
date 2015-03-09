@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-1. Open a Terminal and go to directory of the course's GitHub repository. If you
+1. Open a Terminal and go to the directory of the course's GitHub repository. If you
 are using the course's VM, the directory is
 `~/Dev/praticas-devsoft/infosimples-repo`.
 
